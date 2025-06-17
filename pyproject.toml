@@ -1,6 +1,6 @@
 [project]
 name = "flaskgraph"
-version = "0.1.0"
+version = "0.1.1"
 description = "Easily embed Chart.js charts in Flask apps via jinja from the backend"
 authors = [{ name="dp", email="davidplajner@hellmann.com" }]
 readme = "README.md"
