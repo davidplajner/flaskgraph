@@ -23,7 +23,7 @@ from flaskgraph import graph
 def dashboard():
     chart = graph.bar(
         ['Jan', 'Feb', 'Mar'],
-        {"Appointments"[27, 35, 12]}, # pass data as dict for descriptive tooltip
+        {"Appointments": [27, 35, 12]}, # pass data as dict for descriptive tooltip
         legend=False,
         label_color='standard',
         grid=False,
