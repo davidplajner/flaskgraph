@@ -92,7 +92,7 @@ neon-green, neon-pink, neon-blue
 ```python
 revenue = graph.line(
     ['Q1', 'Q2', 'Q3', 'Q4'],
-    [5000, 7000, 4000, 6500],
+    {"revenue": [5000, 7000, 4000, 6500]},
     label_color='dark',
     legend=True,
     grid=True,

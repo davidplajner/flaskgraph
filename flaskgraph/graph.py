@@ -33,7 +33,7 @@ class ChartJS:
         grid_config = str(grid).lower()
 
         js = f"""
-<canvas id="{chart_id}" style="width:100%; height:auto;"></canvas>
+<canvas id="{chart_id}"></canvas>
 <script>
 const labels_{chart_id} = {json.dumps(labels)};
 const ctx_{chart_id} = document.getElementById('{chart_id}').getContext('2d');
@@ -52,6 +52,7 @@ new Chart(ctx_{chart_id}, {{
   }},
   options: {{
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {{
       legend: {{
         display: {str(legend).lower()},
